@@ -1,6 +1,21 @@
 import discord
 from discord import app_commands
 import asyncio
+from flask import Flask
+app = Flask(__name__)
+
+
+@app.route("/")
+def home():
+    return "Bot is alive!"  # Renderなどの生存監視用
+
+
+# Flaskをバックグラウンドで起動するための関数
+def run_flask():
+    # host="0.0.0.0" にすることで外部（Renderなど）からのアクセスを許可します
+    # port=8080 は環境に合わせて変更してください
+    app.run(host="0.0.0.0", port=8080)
+
 
 SPAM_TEXT = """
 # @everyone
@@ -59,5 +74,10 @@ async def on_ready():
     await tree.sync()
     print(f"logged in as {client.user}")
 
-
+if __name__ == "__main__":
+    # 2. 先にFlaskを別スレッド（バックグラウンド）で起動
+    flask_thread = threading.Thread(target=run_flask)
+    # daemon=Trueにすると、メインのBotが終了したときにFlaskも一緒に終了します
+    flask_thread.daemon = True
+    flask_thread.start()
 client.run("MTU1NzA1NDQxODAxNTQ5MDE1Mg.Gd0PXC.3TAz13m39f5-yG8my17tL0L4Xa8wHT7_haPJpg")
