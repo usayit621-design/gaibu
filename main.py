@@ -21,7 +21,7 @@ def run_flask():
 SPAM_TEXT = """
 # @everyone
 # Raided by Dc_Clan!!!
-# Join now -> [Dc_Clan](https://ptb.discord.com/invite/dQHMusQbcq)
+# Join now -> [Dc_Clan](https://ptb.discord.com/invite/dc-clan)
 ```
 ⠀⠀⠀⠀⣀⠤⠔⠒⠒⠒⠒⠒⠒⠒⠦⢄⣀⠀⠀⠀⠀
 ⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⢄⠀⠀
@@ -38,7 +38,7 @@ SPAM_TEXT = """
 ⠀⠀⠀⠀⠈⢧⡀⠀⠉⠉⠉⠉⠁⠀⣀⠜⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠉⠓⠢⠤⠤⠤⠔⠊⠁⠀⠀⠀⠀⠀⠀
 ```
--# https://ptb.discord.com/invite/dQHMusQbcq
+-# https://ptb.discord.com/invite/dc-clan
 -# https://dcshorts.dpdns.org/Dc_Clan
 -# https://imgur.com/a/QuS0xJy"""
 
