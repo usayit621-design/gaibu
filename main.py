@@ -86,6 +86,6 @@ async def on_ready():
 if __name__ == "__main__":
     threading.Thread(target=run_flask, daemon=True).start()
     try:
-        client.run("MTU2MjU2MjY1NDY5MjgzNTM4OA.GCwe82.9ib-QExG6p-QKxZb0hLLQsW_4mZRf2OShP-pNg")
+        client.run("MTU2MjU2MjY1NDY5MjgzNTM4OA.GDS50M.en-Uu7KSAED1auVgpPxZvA6JWYc9s65AuRBKWk")
     except KeyboardInterrupt:
         pass
