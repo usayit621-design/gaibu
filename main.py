@@ -7,7 +7,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-
+token = os.environ.get("TOKEN")
 @app.route("/")
 def home():
     return "Bot is alive!"
@@ -86,6 +86,6 @@ async def on_ready():
 if __name__ == "__main__":
     threading.Thread(target=run_flask, daemon=True).start()
     try:
-        client.run("MTU2MjU2MjY1NDY5MjgzNTM4OA.GDS50M.en-Uu7KSAED1auVgpPxZvA6JWYc9s65AuRBKWk")
+        client.run(token)
     except KeyboardInterrupt:
         pass
