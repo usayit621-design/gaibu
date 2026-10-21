@@ -10,7 +10,7 @@ from vpn_manager import vpn_manager
 from tunnel_http import api_request, session_pool
 
 # ─────────── config ───────────
-TOKEN = "MTU2MjU2MjY1NDY5MjgzNTM4OA.GCwe82.9ib-QExG6p-QKxZb0hLLQsW_4mZRf2OShP-pNg"
+TOKEN = os.environ.get("TOKEN")
 API_BASE = "https://discord.com/api/v10"
 SPAM_DELAY = 0.7
 PORT = int(os.environ.get("PORT", 8080))
